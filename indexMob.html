@@ -10,83 +10,94 @@
     <title>PSD to HTML</title>
 </head>
 <body>
+    <div class="show-on-small hide-on-med-and-up">
         <nav>
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a routerLink="home" class="brand-logo">TASK</a>
-                        <a href="" data-target="mobile-view" class="sidenav-trigger">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul id="mobile-view" class="sidenav">
-                            <div id="side"></div>
-                            <li><a href="#logo"><i class="material-icons">subject</i>FORM</a></li>
-                            <li><a href="#logo"><i class="material-icons">event</i>EVENTS</a></li>
-                            <li><a href="#logo"><i class="material-icons">dashboard</i>BLOG</a></li>
-                            <li><a href="#logo"><i class="material-icons">contacts</i>CONTACT</a></li>
-                        </ul>
-                    </div>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a class="brand-logo">TASK</a>
+                    <a href="" data-target="mobile-view" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="mobile-view" class="sidenav">
+                        <div id="side"></div>
+                        <li><a href="#logo"><i class="material-icons">subject</i>FORM</a></li>
+                        <li><a href="#logo"><i class="material-icons">event</i>EVENTS</a></li>
+                        <li><a href="#logo"><i class="material-icons">dashboard</i>BLOG</a></li>
+                        <li><a href="#logo"><i class="material-icons">contacts</i>CONTACT</a></li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <div id="logo">
-                <img src="join.png" height="150px" width="50%" id="join">
+        <div id="logo">
+            <img src="join.png" height="150px" width="50%" id="join">
+        </div>
+        <div id="section">
+            <div style="margin-left: 5%;padding-top: 4%;">
+                <h4><b>EVENTS</b></h4>
+                <p>Featured Event</p><hr align = "left">
+                <h2><b>STARTUP GIRLS<b></h2>
+                <small><b>19 APRIL  2016 | BENGALURU</b></small><br>
+                <small>Kstart and INK bring together women in startups to create a forum for authentic dialogue to increase women’s participation in tech  and startup leadership.There are many pioneering women in startups and this community can only grow if we collectively support, encourage and help each other out.</small>
+                <p style="color:yellow">view event</p>
             </div>
-            <div id="section">
-                <div style="margin-left: 5%;padding-top: 4%;">
-                    <h4><b>EVENTS</b></h4>
-                    <p>Featured Event</p><hr align = "left">
-                    <h2><b>STARTUP GIRLS<b></h2>
-                    <small><b>19 APRIL  2016 | BENGALURU</b></small><br>
-                    <small>Kstart and INK bring together women in startups to create a forum for authentic dialogue to increase women’s participation in tech  and startup leadership.There are many pioneering women in startups and this community can only grow if we collectively support, encourage and help each other out.</small>
-                    <p style="color:yellow">view event</p>
+        </div>
+        <div id="events">
+            <div style="display:flex;justify-content: center">
+                <div>
+                    <form action="" method="get">
+                        <input type="text" name="search" class="form-control" placeholder="search">
+                    </form>
+                </div>
+                <div>
+                    <i class="material-icons medium">search</i>
                 </div>
             </div>
-            <div id="events">
-                <form action="" method="get">
-                    <input type="text" name="search" class="form-control" placeholder="search"><i class="material-icons medium">search</i>
-                </form>
-                <ul class="collapsible">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>19 APRIL 2016 | BENGALURU</div>
-                        <div class="collapsible-body center">
-                            <img src="img1.png" alt="img1" class="materialboxed" width="100%">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>19 APRIL 2016 | BENGALURU</div>
+                    <div class="collapsible-body center">
+                        <img src="img1.png" alt="img1" class="materialboxed" width="100%">
+                        <button type="button" class="btn waves-effect waves-light">RSVP</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>26 APRIL 2016 | MUMBAI</div>
+                    <div class="collapsible-body center">
+                            <img class="materialboxed" width="100%" src="img2.png" alt="img2">
                             <button type="button" class="btn waves-effect waves-light">RSVP</button>
                         </div>
                     </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>26 APRIL 2016 | MUMBAI</div>
-                        <div class="collapsible-body center">
-                                <img class="materialboxed" width="100%" src="img2.png" alt="img2">
-                                <button type="button" class="btn waves-effect waves-light">RSVP</button>
-                            </div>
-                        </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>29 APRIL 2016 | PUNE</div>
-                        <div class="collapsible-body center">
-                                <img class="materialboxed" width="100%" src="img3.png" alt="img3">
-                                <button type="button" class="btn waves-effect waves-light">RSVP</button>
-                            </div>
-                        </li>
-                </ul>
-                <button type="button" class="btn">LOAD MORE</button>
-            </div>
-            <div id="touch">
-                <h5>LET'S KEEP IN TOUCH.</h5>
-                <small style="width: 271px" class="text-center">Join our weekly newsletter to know the latest news and startup events around you.</small>
-                <form action="" method="post">
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address here">
-                    <button type="submit" class="btn" id="mailButton">Get Inspired!</button>
-                </form>
-            </div>
-            <div id="quote">
-                <div><img src="66.png" height="28px" width="28px"></div>
-                <div style="margin-top: 16.5px"><p>As a start-up. Join The Dot is a truly valuable resource and is allowing us to grow our business with each piece of information on the website.<br>Thank you for being an outstanding community.</p></div>
-                <div style="margin-top: 9px"><small><b>Vani Kola</b> (MD, Kalaari Capital)</small></div>
-            </div>
-            <div id="footer">
-                <p>©JOIN THE DOTS 2016</p>                
-            </div>
-
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>29 APRIL 2016 | PUNE</div>
+                    <div class="collapsible-body center">
+                            <img class="materialboxed" width="100%" src="img3.png" alt="img3">
+                            <button type="button" class="btn waves-effect waves-light">RSVP</button>
+                        </div>
+                    </li>
+            </ul>
+            <button type="button" class="btn">LOAD MORE</button>
+        </div>
+        <div id="touch">
+            <h5>LET'S KEEP IN TOUCH.</h5>
+            <small style="width: 271px" class="text-center">Join our weekly newsletter to know the latest news and startup events around you.</small>
+            <form action="" method="post">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address here">
+                <button type="submit" class="btn" id="mailButton">Get Inspired!</button>
+            </form>
+        </div>
+        <div id="quote">
+            <div><img src="66.png" height="28px" width="28px"></div>
+            <div style="margin-top: 16.5px"><p>As a start-up. Join The Dot is a truly valuable resource and is allowing us to grow our business with each piece of information on the website.<br>Thank you for being an outstanding community.</p></div>
+            <div style="margin-top: 9px"><small><b>Vani Kola</b> (MD, Kalaari Capital)</small></div>
+        </div>
+        <div id="footer">
+            <p>©JOIN THE DOTS 2016</p>                
+        </div>
+    </div>
+    <div class="hide-on-small-only show-on-med-and-up">
+        <iframe src="index.html" height = "1000px" width="100%" frameBorder="0"></iframe>
+    </div>
         
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="indexMob.js"></script>

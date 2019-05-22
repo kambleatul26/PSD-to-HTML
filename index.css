@@ -97,6 +97,7 @@ body {
 }
 
 #search {
+    display: flex;
     width: 119px;
     height: 23px;
     margin-top: 2%;
